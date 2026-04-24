@@ -4,11 +4,7 @@ AI-powered agents for querying and analyzing California Landscape Metrics (CLM) 
 
 ## Overview
 
-This repository provides three Jupyter notebooks demonstrating different capabilities for interacting with CLM datasets:
-
-1. **Simple Agent** - Basic dataset search with conversation history
-2. **Agent with Logfire** - Enhanced logging and observability
-3. **Enhanced Agent** - Full-featured analysis with maps and visualizations
+This repository provides a Jupyter notebooks demonstrating different capabilities for interacting with CLM datasets:
 
 ## Features
 
@@ -30,8 +26,8 @@ This repository provides three Jupyter notebooks demonstrating different capabil
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/clm-agents-ndp.git
-cd clm-agents-ndp
+git clone https://github.com/national-data-platform/ndp_clm_agent_demo.git
+cd ndp_clm_agent_demo
 ```
 
 2. Install dependencies:
@@ -50,17 +46,6 @@ NRP_API_KEY=your_nrp_api_key
 
 ## Quick Start
 
-### Simple Agent (Recommended for beginners)
-
-Open `simple_clm_agent.ipynb` and run all cells. This provides a basic chat interface for dataset search.
-
-**Example questions:**
-- "Find datasets about carbon turnover"
-- "What are the units for this dataset?"
-- "Search for burn probability datasets"
-
-### Enhanced Agent (Full features)
-
 Open `enhanced_clm_agent.ipynb` for advanced capabilities including maps and visualizations.
 
 **Example questions:**
@@ -69,40 +54,6 @@ Open `enhanced_clm_agent.ipynb` for advanced capabilities including maps and vis
 - "Compare the distribution of carbon turnover between San Diego and Orange county"
 - "Which county has the highest mean carbon turnover time?"
 
-### Agent with Logfire (For debugging)
-
-For observability and debugging, use `simple_clm_agent_with_logfire.ipynb`:
-
-1. First authenticate with Logfire:
-```bash
-logfire auth
-```
-
-2. Run the notebook to see detailed logs at https://logfire.pydantic.dev
-
-## Notebooks
-
-### 1. simple_clm_agent.ipynb
-
-Basic agent demonstrating core functionality:
-- Dataset search using semantic similarity
-- Conversation history management
-- Simple chat interface
-- Support for OpenAI GPT-4o-mini or NRP Qwen3
-
-**Best for:** Learning the basics, simple queries
-
-### 2. simple_clm_agent_with_logfire.ipynb
-
-Same as the simple agent but with comprehensive logging:
-- All API calls logged to Logfire cloud
-- Performance metrics tracking
-- Error tracking and debugging
-- HTTP request monitoring
-
-**Best for:** Development, debugging, understanding agent behavior
-
-### 3. enhanced_clm_agent.ipynb
 
 Full-featured agent with advanced capabilities:
 - Statistical analysis (mean, median, min, max, std)
@@ -111,8 +62,6 @@ Full-featured agent with advanced capabilities:
 - Distribution charts and histograms
 - Multi-county comparisons
 - Ranking and filtering
-
-**Best for:** Production use, complex analysis tasks
 
 ## Architecture
 
